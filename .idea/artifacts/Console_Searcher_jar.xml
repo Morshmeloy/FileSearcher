@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" build-on-make="true" name="Console-Searcher:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/Console_Searcher_jar</output-path>
+    <root id="archive" name="Console-Searcher.jar">
+      <element id="module-output" name="Console-Searcher" />
+    </root>
+  </artifact>
+</component>

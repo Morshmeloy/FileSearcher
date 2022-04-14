@@ -3,7 +3,6 @@ package com.company;
 import java.io.File;
 import java.util.ArrayList;
 import java.util.List;
-import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
@@ -11,9 +10,10 @@ public class Main {
     public static void main(String[] args) {
         ArrayList<File> fileList=new ArrayList<>();
         Scanner scanner=new Scanner(System.in);
-        System.out.println("Укажите корневую папку ");
+        System.out.println("Specify the root folder ");
         String Path=scanner.nextLine();
         searchFiles(new File(Path),fileList);
+        System.out.println("pom.xml files:");
         for(File file:fileList){
             System.out.println(file.getAbsolutePath());
         }
@@ -22,7 +22,7 @@ public class Main {
     }
     public static void searchFiles(File rootFile, List<File>fileList){
         if(rootFile.isDirectory()){
-            System.out.println("Поиск в : "+rootFile.getAbsolutePath());
+            System.out.println("Search in : "+rootFile.getAbsolutePath());
             File[] directoryFiles=rootFile.listFiles();
             if(directoryFiles !=null){
                 for(File file:directoryFiles){
@@ -30,8 +30,10 @@ public class Main {
                         searchFiles(file,fileList);
                     }
                     else{
-                        if(file.getName().equals("pom.xml"));
-                        fileList.add(file);
+                        if(file.getName().matches("pom.xml"))
+                        {
+                            fileList.add(file);
+                        }
                     }
                 }}
         }
