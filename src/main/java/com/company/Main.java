@@ -11,13 +11,13 @@ public class Main {
         Scanner scanner = new Scanner(System.in);
         System.out.println("Specify the root folder ");
         String Path = scanner.nextLine();
-        searchFiles.SearchFiles(new File(Path),fileList);
+        SearcherOfFiles.searchFiles(new File(Path), fileList);
         System.out.println("pom.xml files:");
-        for(File file:fileList){
+        for (File file : fileList) {
             System.out.println(file.getAbsolutePath());
         }
 
 
     }
 
-    }
+}
