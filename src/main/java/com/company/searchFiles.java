@@ -3,7 +3,7 @@ package com.company;
 import java.io.File;
 import java.util.List;
 
-public class SearcherOfFiles {
+class SearcherOfFiles {
     public static void searchFiles(File rootFile, List<File> fileList) {
         if (rootFile.isDirectory()) {
             System.out.println("Search in : " + rootFile.getAbsolutePath());
