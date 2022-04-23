@@ -7,14 +7,14 @@ public class SystemComponent {
     String artifactId;
     String groupId;
     String version;
-    Collection <Dependency> dependencies;
+    Collection<Dependency> dependencies;
 
 
     public SystemComponent(Dependency dependency) {
         this.artifactId = dependency.artifactId;
         this.groupId = dependency.groupId;
         this.version = dependency.version;
-        //this.dependencies=
+        dependencies.add(/*??*/);
 
     }
 }
