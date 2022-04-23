@@ -10,11 +10,13 @@ public class SystemComponent {
     Collection<Dependency> dependencies;
 
 
-    public SystemComponent(Dependency dependency) {
-        this.artifactId = dependency.artifactId;
-        this.groupId = dependency.groupId;
-        this.version = dependency.version;
-        dependencies.add(/*??*/);
-
+    public SystemComponent(String artifactId, String groupId, String version, Collection<Dependency> dependencies) {
+        this.artifactId = artifactId;
+        this.groupId = groupId;
+        this.version = version;
+        this.dependencies = dependencies;
     }
+
+
+
 }
