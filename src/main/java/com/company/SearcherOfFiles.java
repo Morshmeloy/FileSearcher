@@ -15,6 +15,8 @@ class SearcherOfFiles {
                     } else {
                         if (file.getName().matches("pom.xml")) {
                             fileList.add(file);
+
+                            //сюда вставить
                         }
                     }
                 }
