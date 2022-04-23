@@ -2,6 +2,7 @@ package com.company;
 
 import java.io.File;
 import java.util.ArrayList;
+import java.util.Collection;
 import java.util.Scanner;
 
 public class Main {
@@ -16,6 +17,7 @@ public class Main {
         for (File file : fileList) {
             System.out.println(file.getAbsolutePath());
         }
+        Dependency dependency=new Dependency(/*атрибуты: groupId, artifactId, version*/);
 
 
     }
