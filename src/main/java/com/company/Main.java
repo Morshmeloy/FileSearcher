@@ -21,11 +21,11 @@ public class Main {
 
         }
         Collection<Dependency> dependencies = new ArrayList<>();
-        SearcherOfDependency.SearcherOfDependency(fileList,dependencies);
-        System.out.println(dependencies.isEmpty());
-
-
-
+        SearcherOfDependency dependency = new SearcherOfDependency();
+        dependency.SearcherOfDependency(fileList, dependencies);
+        SearcherOfSystemComponent systemComponent = new SearcherOfSystemComponent();
+        systemComponent.SearcherOfSystemComponent(fileList, dependencies);
+        System.out.println(SystemComponent);
     }
 
 
