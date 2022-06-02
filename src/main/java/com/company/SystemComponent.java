@@ -4,8 +4,8 @@ import java.util.Collection;
 
 public class SystemComponent {
     //реальные компоненты системы атрибуты: artifactId, groupId, version, dependencies.
-    String artifactId;
     String groupId;
+    String artifactId;
     String version;
     Collection<Dependency> dependencies;
 
@@ -41,17 +41,11 @@ public class SystemComponent {
         this.dependencies = dependencies;
     }
 
-    public SystemComponent(String artifactId, String groupId, String version, Collection<Dependency> dependencies) {
-        this.artifactId = artifactId;
+    public SystemComponent(String groupId, String artifactId, String version, Collection<Dependency> dependencies) {
         this.groupId = groupId;
+        this.artifactId = artifactId;
         this.version = version;
         this.dependencies = dependencies;
-    }
-    public void ShowSystemComponent(){
-        System.out.println(artifactId);
-        System.out.println(groupId);
-        System.out.println(version);
-        System.out.println(dependencies);
     }
 
 }
