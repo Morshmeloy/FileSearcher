@@ -41,5 +41,4 @@ public class Dependency {
     //атрибуты: groupId, artifactId, version
 
 
-
 }
